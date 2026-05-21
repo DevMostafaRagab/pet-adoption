@@ -16,11 +16,17 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
-.top-section {
+.top-section-wrapper {
   background-color: #001d37;
   color: white;
+}
 
+.top-section {
   /* Remove the white gaps from the edges of the web page - from the top and bottom */
   padding-top: 140px;
   padding-bottom: 140px;
+
+  /* center text */
+  max-width: 1066px;
+  margin: 0 auto;
 }
