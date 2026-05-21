@@ -3,6 +3,15 @@
   * my-pet-v1
 *******************************/
 
+/* Remove the default white gaps from the edges of the web page - from right and left*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Set font-family for the entire page */
 body {
   font-family: "Source Sans 3", sans-serif;
 }
@@ -10,4 +19,8 @@ body {
 .top-section {
   background-color: #001d37;
   color: white;
+
+  /* Remove the white gaps from the edges of the web page - from the top and bottom */
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
