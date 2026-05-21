@@ -2,3 +2,12 @@
   * Wednesday, 20/5/2026
   * my-pet-v1
 *******************************/
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.top-section {
+  background-color: #001d37;
+  color: white;
+}
