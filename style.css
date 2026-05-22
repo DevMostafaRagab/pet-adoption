@@ -3,6 +3,7 @@
   * my-pet-v1
 *******************************/
 
+/** General settings for the entire page  */
 /* Remove the default white gaps from the edges of the web page - from right and left*/
 html,
 body {
@@ -15,6 +16,8 @@ body {
 body {
   font-family: "Source Sans 3", sans-serif;
 }
+
+/* =================================================================================================================== */
 
 .top-section-wrapper {
   background-color: #001d37;
@@ -30,3 +33,39 @@ body {
   max-width: 1066px;
   margin: 0 auto;
 }
+
+/* =================================================================================================================== */
+
+/** Button setting */
+
+.btn {
+  background-color: #475aff;
+  color: #ffffff;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+
+  text-decoration: none; /* Removes underlines*/
+  border: 2px solid #475aff; /* Sets the color and thickness of the outline */
+  border-radius: 1000px; /* Gives the corners a rounded look */
+  padding: 13px 25px; /* Adds space inside the button */
+  display: inline-block;
+}
+
+/* outline around a button */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+/* Right blank space after the first button */
+.mr {
+  margin-right: 11px;
+}
+
+/* Blank space below the buttons */
+.intro-buttons {
+  margin-bottom: 130px;
+}
+
+/* =================================================================================================================== */
