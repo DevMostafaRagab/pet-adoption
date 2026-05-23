@@ -87,3 +87,38 @@ body {
 }
 
 /* =================================================================================================================== */
+
+/** Boxes Setting - Multiple Columns */
+
+/* creates four columns (boxes) side by side  */
+.intro-boxes {
+  display: grid; /* Activates the CSS Grid layout */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* creates four columns (boxes) each column takes up an equal fraction (fr) size */
+  column-gap: 16px; /* Sets a fixed space (16px) between each of the four columns */
+}
+
+.intro-box {
+  border: 1px solid #ffffff3d; /* convert rgba color to hex = rgba(255, 255, 255, 0.24) */
+  padding: 33px 25px;
+
+  /* todo... bonus code */
+  text-align: center;
+  border-radius: 8px;
+}
+
+.intro-box h2 {
+  font-size: 1.5rem;
+  margin: 31px 0 3px 0;
+}
+
+.intro-box p {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.intro-box :hover {
+  /* todo... bonus code */
+  transform: translateY(-1px);
+}
+
+/* =================================================================================================================== */
