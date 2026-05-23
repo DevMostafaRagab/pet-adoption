@@ -28,6 +28,11 @@ body {
 
   padding-left: 16px;
   padding-right: 16px;
+
+  /* todo... bonus code */
+  /* remove the bottom (horizontal) scrollbar */
+  overflow-x: hidden;
+  position: relative;
 }
 
 .top-section {
