@@ -4,6 +4,7 @@
 *******************************/
 
 /** General settings for the entire page  */
+
 /* Remove the default white gaps from the edges of the web page - from right and left*/
 html,
 body {
@@ -19,9 +20,14 @@ body {
 
 /* =================================================================================================================== */
 
+/** Container settings */
+
 .top-section-wrapper {
   background-color: #001d37;
   color: white;
+
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .top-section {
@@ -32,11 +38,12 @@ body {
   /* center text */
   max-width: 1066px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* =================================================================================================================== */
 
-/** Button setting */
+/** Buttons setting */
 
 .btn {
   background-color: #475aff;
@@ -119,6 +126,43 @@ body {
 .intro-box :hover {
   /* todo... bonus code */
   transform: translateY(-1px);
+}
+
+/* =================================================================================================================== */
+
+/** Blurred circles Setting */
+
+.circle-top {
+  width: 617px;
+  height: 617px;
+  background: #6079ff;
+  border-radius: 50%;
+
+  top: -365px;
+  left: -123px;
+  position: absolute;
+
+  opacity: 0.85;
+  filter: blur(150px);
+}
+
+.circle-right {
+  width: 617px;
+  height: 617px;
+  background: #d660ff;
+  border-radius: 50%;
+
+  top: 62px;
+  right: -390px;
+  position: absolute;
+
+  opacity: 0.85;
+  filter: blur(150px);
+}
+
+.top-content {
+  z-index: 2;
+  position: relative;
 }
 
 /* =================================================================================================================== */
