@@ -62,6 +62,12 @@ body {
   border-radius: 1000px; /* Gives the corners a rounded look */
   padding: 13px 25px; /* Adds space inside the button */
   display: inline-block;
+
+  /* Smooth transition for hover effects */
+  transition:
+    background-color 0.3s ease-out,
+    border 0.3s ease-out,
+    color 0.3s ease-out;
 }
 
 /* outline around a button */
@@ -78,6 +84,15 @@ body {
 /* Blank space below the buttons */
 .intro-buttons {
   margin-bottom: 130px;
+}
+
+/* The hover effect */
+.btn:hover {
+  background-color: #2e40e2;
+  border: 2px solid #2e40e2;
+
+  /*transform: translateY(-1px);*/ /* Moves the button up slightly (-up +down) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
 /* =================================================================================================================== */
