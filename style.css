@@ -31,8 +31,7 @@ body {
 
   /* todo... bonus code */
   /* remove the bottom (horizontal) scrollbar */
-  overflow-x: hidden;
-  position: relative;
+  overflow: hidden;
 }
 
 .top-section {
@@ -43,6 +42,8 @@ body {
   /* center text */
   max-width: 1066px;
   margin: 0 auto;
+
+  /* remove the bottom (horizontal) scrollbar */
   position: relative;
 }
 
