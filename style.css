@@ -181,6 +181,7 @@ body {
   filter: blur(150px);
 }
 
+/*! The main reason for creating <div class="top-content"> is to make the top blur circle behind heading */
 .top-content {
   z-index: 2;
   position: relative;
