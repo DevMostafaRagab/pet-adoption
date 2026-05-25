@@ -20,6 +20,7 @@ body {
 
 /* =================================================================================================================== */
 
+/** (1) */
 /** Container settings */
 
 .top-section-wrapper {
@@ -58,10 +59,14 @@ body {
   font-weight: 600;
   font-size: 1.125rem;
 
-  text-decoration: none; /* Removes underlines*/
-  border: 2px solid #475aff; /* Sets the color and thickness of the outline */
-  border-radius: 1000px; /* Gives the corners a rounded look */
-  padding: 13px 25px; /* Adds space inside the button */
+  text-decoration: none;
+  /* Removes underlines*/
+  border: 2px solid #475aff;
+  /* Sets the color and thickness of the outline */
+  border-radius: 1000px;
+  /* Gives the corners a rounded look */
+  padding: 13px 25px;
+  /* Adds space inside the button */
   display: inline-block;
 
   /* Smooth transition for hover effects */
@@ -92,8 +97,10 @@ body {
   background-color: #2e40e2;
   border: 2px solid #2e40e2;
 
-  /*transform: translateY(-1px);*/ /* Moves the button up slightly (-up +down) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  /*transform: translateY(-1px);*/
+  /* Moves the button up slightly (-up +down) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Adds a subtle shadow */
 }
 
 /* =================================================================================================================== */
@@ -120,13 +127,17 @@ body {
 
 /* creates four columns (boxes) side by side  */
 .intro-boxes {
-  display: grid; /* Activates the CSS Grid layout */
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* creates four columns (boxes) each column takes up an equal fraction (fr) size */
-  column-gap: 16px; /* Sets a fixed space (16px) between each of the four columns */
+  display: grid;
+  /* Activates the CSS Grid layout */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* creates four columns (boxes) each column takes up an equal fraction (fr) size */
+  column-gap: 16px;
+  /* Sets a fixed space (16px) between each of the four columns */
 }
 
 .intro-box {
-  border: 1px solid #ffffff3d; /* convert rgba color to hex = rgba(255, 255, 255, 0.24) */
+  border: 1px solid #ffffff3d;
+  /* convert rgba color to hex = rgba(255, 255, 255, 0.24) */
   padding: 33px 25px;
 
   /* todo... bonus code */
@@ -185,6 +196,30 @@ body {
 .top-content {
   z-index: 2;
   position: relative;
+}
+
+/* =================================================================================================================== */
+
+/** (2) */
+/** Pet Section Setting */
+
+.middle-section {
+  background-color: #fff;
+  padding: 130px 16px;
+}
+
+/* center content */
+.middle-section-inner {
+  max-width: 1066px;
+  margin: 0 auto;
+}
+
+/* setting for heading */
+.middle-section-title {
+  /* font size in figma in px -> convert to rem -> divide px by 16 */
+  font-size: 5.31rem;
+  margin: 0;
+  line-height: 1;
 }
 
 /* =================================================================================================================== */
