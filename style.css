@@ -254,3 +254,16 @@ body {
 }
 
 /* =================================================================================================================== */
+
+/** Footer section  */
+
+.footer {
+  text-align: center;
+  color: #a6a6a6;
+
+  font-size: 0.900rem;
+  padding: 50px 0 50px 0;
+
+  /* todo... bonus code */
+  background-color: #001d37;
+}
