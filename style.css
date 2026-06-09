@@ -199,6 +199,13 @@ body {
   position: relative;
 }
 
+/* Weather temperature setting */
+span,
+#temp {
+  color: black;
+  background-color: darkorange;
+}
+
 /* =================================================================================================================== */
 
 /** (2) */
