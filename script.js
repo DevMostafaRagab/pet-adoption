@@ -1,8 +1,4 @@
-/*
-  //* Tuesday, 9/6/2026
-  //*
-*/
-
+//* Tuesday, 16/6/2026
 
 
 // fetches dynamic weather data and displays the current temperature into the first box
