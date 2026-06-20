@@ -1,7 +1,5 @@
-//* Tuesday, 16/6/2026
 
-
-// fetches dynamic weather data and displays the current temperature into the first box
+// Fetching dynamic weather data and displays the current temperature into the first box
 async function showWeather() {
   //* Defines a URL for the API
   const weatherURI = "https://api.weather.gov/gridpoints/MFL/110,50/forecast";
@@ -16,5 +14,5 @@ async function showWeather() {
   document.querySelector("#temp").textContent = currentTemp;
 }
 
-// call showWeather() function
+// call function
 showWeather();
