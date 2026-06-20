@@ -19,6 +19,9 @@ async function showPetsData() {
     //1// "clone" will be used to injected dynamic data into html tags
     const clone = template.content.cloneNode(true);
 
+    //!=>#2<=// to use dataset.species in filtring
+    clone.querySelector(".pet-card").dataset.species = pet.species;
+
     //2// display pets data
     clone.querySelector("h3").textContent = pet.name;
     clone.querySelector(".pet-card-description").textContent = pet.description;
@@ -52,4 +55,37 @@ function formatAge(birthYear) {
   if (age == 1) return "1 year old";
   if (age == 0) return "Less than a year old";
   return `${age} years old`;
+}
+
+// pet filter button
+/* (code for) Add horizontal line (underline) beneath the first button and shift it when other buttons are clicked  */
+
+// get and select all three filter buttons
+const allButtons = document.querySelectorAll(".pet-filter button");
+
+// add a pet filter handler to all buttons
+allButtons.forEach((el) => {
+  el.addEventListener("click", petFilterHandler);
+});
+
+// filter pets
+function petFilterHandler(e) {
+  //1// remove active class from all buttons
+  allButtons.forEach((el) => el.classList.remove("active"));
+
+  //2// then add active class to the specific button that just got clicked
+  e.target.classList.add("active");
+
+  //3// which button being clicked
+  // Accessing (data-* attributes) HTML custom data attributes using the element's built-in "dataset" property
+  const currentFilter = e.target.dataset.filter;
+  // console.log(currentFilter); // (TEST) print the selected pet being clicked
+  document.querySelectorAll(".pet-card").forEach((el) => {
+    //!=>#2<=// to use dataset.species in filtring
+    if (currentFilter == el.dataset.species || currentFilter == "allpets") {
+      el.style.display = "grid";
+    } else {
+      el.style.display = "none";
+    }
+  });
 }

@@ -180,9 +180,12 @@
 
         <div class="pet-filter">
           <p>
-            Show me: <button class="active">All Pets</button>
-            <button>Only Dogs</button>
-            <button>Only Cats</button>
+            <!-- Add class "active" to underline the first button  -->
+            <!-- (data-* attributes) HTML custom data attributes to access buttons via JavaScript -->
+            Show me:
+            <button class="active" data-filter="allpets">All Pets</button>
+            <button data-filter="dog">Only Dogs</button>
+            <button data-filter="cat">Only Cats</button>
           </p>
         </div>
 

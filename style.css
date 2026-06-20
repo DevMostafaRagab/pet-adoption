@@ -256,6 +256,8 @@ span,
   color: #7d7d7d;
 }
 
+/* (override previous "button:hover" setting) */
+/* Add horizontal line (underline) beneath the first button and shift it when other buttons are clicked  */
 .pet-filter .active,
 .pet-filter .active:hover {
   color: #475aff;
